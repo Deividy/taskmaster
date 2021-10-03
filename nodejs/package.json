@@ -1,0 +1,18 @@
+{
+    "name": "taskmaster-nodejs",
+    "description": "taskmaster server in nodejs",
+    "version": "0.0.1",
+    "author": "Leo Rodrigues",
+    "license": "MIT",
+    "scripts": {
+        "dev:api": "ts-node ./src/api/app.ts"
+    },
+    "dependencies": {
+        "knex": "^0.95.11",
+        "pg": "^8.7.1",
+        "typescript": "^4.4.3"
+    },
+    "devDependencies": {
+        "ts-node": "^10.2.1"
+    }
+}
