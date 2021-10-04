@@ -9,11 +9,13 @@
         "dev:api": "nodemon ./src/api/app.js"
     },
     "dependencies": {
+        "bcrypt": "^5.0.1",
         "dotenv": "^10.0.0",
         "knex": "^0.95.11",
         "pg": "^8.7.1"
     },
     "devDependencies": {
+        "faker": "^5.5.3",
         "jest": "^27.2.4",
         "nodemon": "^2.0.13"
     }
