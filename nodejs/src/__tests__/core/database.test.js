@@ -14,7 +14,6 @@ describe('Database', () => {
     it('should have health connection', async () => {
         const result = await database.knex.raw('SELECT 1 AS health_check');
 
-
         expect(result).toBeTruthy(); 
     });
 });
