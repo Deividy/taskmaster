@@ -10,7 +10,7 @@ class CreateUserService {
             const foundUser = await this.context.user.findByEmail(email);
 
             if (foundUser) {
-                return { ok: false, data: { error: 'Email already in use.'}}
+                return { ok: false, status: 400, data: { error: 'Email already in use.' }}
             }
 
             const user = await this.context.user.create({
@@ -19,7 +19,7 @@ class CreateUserService {
                 password
             });
 
-            return { ok: true, data: { user } };
+            return { ok: true, status: 201, data: { user } };
         } catch (err) {
             logger.error(err); 
         } 

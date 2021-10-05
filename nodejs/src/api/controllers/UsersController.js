@@ -20,9 +20,9 @@ class UsersController {
 
             delete user.password;
 
-            return response.status(201).json(serviceResponse);
+            return response.status(serviceResponse.status).json(serviceResponse);
         } else {
-            return response.status(400).json(serviceResponse)
+            return response.status(serviceResponse.status).json(serviceResponse)
         }
     };
 };
